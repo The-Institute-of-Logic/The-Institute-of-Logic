@@ -1,0 +1,1 @@
+Solving the challenges in the book Codex Object Pascal Development Guide

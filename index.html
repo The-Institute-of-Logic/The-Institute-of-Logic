@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Institute Of Logic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* === Reset & Base === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      color: #333;
+      background-color: #f7f7f7;
+      line-height: 1.7;
+    }
+
+    /* === Header === */
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 30px 0;
+      padding-top: 0%;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      height: 200px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 5px;
+    }
+
+    header h1 a img {
+      width: 200px;
+      height: 200px;
+      filter: grayscale(100%) brightness(0) invert(1);
+      border: none;
+      margin: 0;
+      /*display: block;*/
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+
+    /* === Navigation === */
+    nav {
+      margin: 15px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.2em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* === Hero Image === */
+    .hero-image {
+      background-image: url('public/img/Adoration of the Shepherds (Luke 2-16-17).jpg');
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* === Main Container === */
+    .container {
+      max-width: 800px;
+      margin: -150px auto 30px;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 2;
+    }
+
+    /* === Content === */
+    h2 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5em;
+      color: #000;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 25px 0;
+      margin-top: 5px;
+      color: #444;
+    }
+
+    h4 {
+     /*Add Style*/
+
+    }
+
+    img {
+      max-width: 100%;
+      margin: 30px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    blockquote {
+      font-family: 'Georgia', serif;
+      font-size: 1.2em;
+      font-style: italic;
+      color: #555;
+      padding: 20px 30px;
+      margin: 40px 0;
+      background: #f9f9f9;
+      border-left: 4px solid #000;
+    }
+
+    /* === Contact Section === */
+    .contact {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* === Social Media === */
+    .social-media {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+
+    .social-media a {
+      margin: 0 10px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .social-media a:hover {
+      text-decoration: underline;
+    }
+
+    /* === Footer === */
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 0.85em;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>
+      <a href="index.html">
+        <img src="InstituteOfLogiclogo.png" alt="Logo" />
+      </a>
+    </h1>
+    <!-- You can add <nav> here if needed -->
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero-image"></div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="content">
+      <h2 style="text-align: center;">Epistula Aperta ad Publicum (Declaratio Publica)</h2>
+<h4 style="text-align: center;">Kennidy L. Guimarães<br>
+  THE INSTITUTE OF LOGIC – 2025</h4>
+
+    <p>
+      The Institute of Logic was conceived as something distinct from the ordinary, an aspiration to restore rationality and logic to the core of debates, from which they should never have been removed.
+      Logic, as the science of ordered thinking, rests on immortal principles enshrined by the venerable Aristotle: the principle of identity, the principle of non‑contradiction, and the principle of the excluded middle. These postulates not only govern faith and the paths of society but also illuminate, like an unshaken beacon, the domains of the exact and natural sciences.
+      <br>
+      However, in a moment of carelessness, we abandoned the logical path to surrender to positions that contradict reason and the intrinsic nature of the human being as an individual.
+      One might imagine, perhaps, that logic is innate and sufficient, leading us to dismiss, without more, the materials and teachings this institute offers. And indeed, such is the freedom that logic allows: the faculty to disagree.
+      <br>
+      Yet, there are those who ardently yearn for the ability to apply logic with masterful skill and to intertwine rationality with vigorous passion. To these, I offer my most sincere admiration.
+    </p>
+    <blockquote>Faith and reason (fides et ratio) are like the two wings by which the human spirit rises to the contemplation of truth. It was God who placed in the heart of man the desire to know the truth and, ultimately, to know Him, so that, knowing and loving Him, he may also reach the full truth about himself (cf. Ex 33, 18; Ps 2726, 8-9; 6362, 2-3; Jn 14, 8; 1 Jn 3, 2)</blockquote>
+
+    <h2>Universality of Logic</h2>
+    <p>
+      Logic, being universal, transcends cultures and eras. Its strength manifests equally in the depths of the East as in the lands of the West, subject only to the nuances of customs and generations.
+      True logic is not achieved through the isolated labor of one man, but through the relentless collaboration of countless minds, both renowned and anonymous.
+      Without the meticulous application of logic, no scientific progress would have been consolidated, and no human ideal would have withstood the test of time.
+    </p>
+
+    <h2>The Purpose of the Institute</h2>
+    <p>
+      Logical practice at its highest expression allows us to foresee events with admirable precision, understand the mysteries of the human condition, and unveil what remains hidden to inattentive eyes.
+      This institute, thus, rises as a bastion to welcome logical debate, promote studies and courses, and declare to all rational minds that they are no longer alone.
+      Here, they may share ideas, naturally doubt one another, and discuss, based on factual science, the themes that affect or do not affect the masses.
+      <br>
+      I reiterate that every position is welcome, and freedom of thought will be safeguarded from any censorship. This is the place where logic and reason come together to flourish, without judgment of any kind, without censorship.
+    </p>
+
+    <h2>Commitment to Knowledge</h2>
+    <p>
+      Here lie the articles we offer, most of our publications being open access. It is not the purpose of our institution to monopolize knowledge, a practice we repudiate as vile and ignoble.
+      On the contrary, we are promoters and patrons of scientific knowledge, disseminators of causes that harmonize with our vision, grounded in freedom, logic, rationality, reason, and technological advancement.
+      Supported by numerous investigations, both ours and of others, we recognize the urgent need to illuminate truths that, though evident to some, remain obscure to many.
+    </p>
+    <p>
+      Our work is directed at the teaching of technological arts, mathematics, classical logic, and algorithmic logic.
+      We work with dedication, convinced that it is possible to positively transform minds through reason, logic, and the rational spirit.
+    </p>
+
+    <h2>Some Truths About Us</h2>
+    <h4>Financial Intention</h4>
+    <p>
+      We do not seek profit. All revenue comes from donations, most of which are allocated to emerging projects or initiatives we deem of crucial importance.
+    </p>
+
+    <h4>Logical and Philosophical Branch</h4>
+    <p>
+      We adhere to the principles of classical logic and algorithmic logic, pondering with rationality and reason.
+      We are not infallible; we acknowledge the possibility of error and encourage our postulates to be judged with impartiality and logical clarity.
+    </p>
+
+    <h4>Scientific Branch</h4>
+    <p>
+      We embrace science in its entirety, considering it the highest expression of human intellect.
+      Our focus falls particularly on the STEM sciences, which we see as pillars of progress.
+    </p>
+
+    <h4>Branch of Faith</h4>
+    <p>
+      That all reason is founded on belief in something, thus is formed the cradle of ideas and the birth of theories.
+      Thus, we affirm our conviction and belief in the Trinity (Father, Son, and Holy Spirit), and in the knowledge brought by its active propagators, such as Father Georges Lemaître (1894‑1966), and many other evangelists of truth, faith, and logic.
+    </p>
+    <img src="public/img/St-thomas-aquinas.jpg" alt="Image Paint St-thomas-aquinas">
+
+    <h2>Our Symbols</h2>
+    <h4>The Coat of Arms</h4>
+    <p>
+      Our symbol, composed of a crowned lion wielding a sword, is full of meaning. The lion embodies the courage to act according to duty, even when such duty opposes our desires.
+      The sword represents justice and the defense of noble ideals, and the crown symbolizes the aspiration to a high state of excellence among both virtues.
+      Although this symbol has roots in ancestral heraldry, it was adapted to meet the values of our institution.
+    </p>
+    <h4>Christian Symbols</h4>
+    <p>
+      You may notice allusions to Christianity (Catholicism) and other spiritual traditions. These reflect not only the faith of TIOL’s founders but also our openness to discuss themes in multiple dimensions, reconciling rationality, faith, and logic.
+      We hold the belief that faith, well understood, is both logical and rational.
+    </p>
+
+    <h2>Closure</h2>
+    <p>
+      This is the letter that, with humble dedication, I address to the public, be they one, a thousand, or millions. The appreciation I have for interlocutors is not measured by their number, but by the greatness of their willingness for dialogue, for the search for truth, and for common progress.
+      If you have something to teach, I beg you to contact us, for all shared knowledge is a good that multiplies.
+      If you yearn to learn, I invite you to walk with us on this path of instruction and discovery.
+      If you possess the acuity to correct us, be welcome, for only those who accept criticism with an open spirit and lucid mind improve.
+    </p>
+    <p>
+      And if, by chance, you wish to embark with us on this noble mission, take in your right hand knowledge, in your left hand courage, and follow us with a firm heart and resolute will.
+    </p>
+
+    <p>
+      Sincerely,<br>
+      The Institute Of Logic, November 25, 2024.
+    </p>
+      <blockquote>
+        “Laudetur Deus, sicut in terra, ita et in caelo.”
+      </blockquote>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+      <p>For more information, contact us at:</p>
+      <a href="mailto:info@theinstituteoflogic.com">info@theinstituteoflogic.com</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <img src="InstituteOfLogiclogo.png" style="border: 0px; width: 150px; height: 150px; margin: auto; display: block;">
+    © 2024 The Institute Of Logic. All rights reserved.
+  </footer>
+
+</body>
+</html>
